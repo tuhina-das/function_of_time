@@ -1,0 +1,21 @@
+.App{
+  min-height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+#webpage{
+  height: 100%;
+  padding:20px;
+  padding-bottom:40px;
+}
+
+Footer{
+  position:absolute;
+  bottom:0;
+}
+
+.graphCont{
+  max-height: 100vh;
+}
+

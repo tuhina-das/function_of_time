@@ -1,0 +1,36 @@
+* {
+    margin-top: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    margin-top:auto;
+    position:relative;
+    background-color: rgb(59, 164, 255);
+    bottom:0;
+    width:100%;
+    display: flex;
+    letter-spacing: 1px;
+    padding: 2rem;
+}
+
+.footerSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    h1{
+        margin-bottom:5px;
+        color:aliceblue;
+    }
+}
+.footerLink {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+    color:blue;
+}
