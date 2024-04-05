@@ -1,1 +1,4 @@
 /* TODO: make datetime picker prettier */
+.react-datetime-picker__calendar-button.react-datetime-picker__button{
+    /* display:none; */
+}

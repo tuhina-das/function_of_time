@@ -6,6 +6,7 @@ import Calendar from "@ericz1803/react-google-calendar";
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datetime-picker/dist/DateTimePicker.css'
+import {API_KEY} from '../../secrets';
 
 // TODO: fix calendar edit. start w/ edit pop-up and delete function.
 
@@ -79,13 +80,11 @@ function CalendarDisplay() {
     console.log("------ END -------")
     console.log(eventName);
     console.log(eventDescription);
-
-    // TODO: erm i don't want that online
-    const API_KEY = "AIzaSyBQzqTpCH7pEq5_rGmZaj3y0wkq0oV_wuI";
-    // TODO: is there a way to access a private google calendar???? how do i make this nice for the user???
+    
+    // TODO: make help button/page - little circle button above calendar
     let calendars = [
         {
-            calendarId: (session) ? session.user.email : null
+            calendarId: session?.user?.email 
         }
     ];
     
@@ -98,9 +97,9 @@ function CalendarDisplay() {
                         <h2>Hey there, {session.user.user_metadata.name}!</h2>
                         <h1 className="functionTitle">My Calendar</h1>
                         <p>Start of your event</p>
-                        <DateTimePicker onChange={setStart} value={start} style={{ width: "auto" }} />
+                        <DateTimePicker onChange={setStart} value={start} style={{ width: "auto" }} disableCalendar={true} />
                         <p>End of your event</p>
-                        <DateTimePicker onChange={setEnd} value={end} />
+                        <DateTimePicker onChange={setEnd} value={end} disableCalendar={true} />
                         <p>Event name</p>
                         <input type="text" onChange={(e) => setEventName(e.target.value)} />
                         <p>Event description</p>

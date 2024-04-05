@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { TodoWrapper } from './components/TodoWrapper';
 
-// TODO: emojis made my DB go boom. clean DB maybe?
 
 function App() {
   return (
