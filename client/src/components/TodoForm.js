@@ -20,7 +20,7 @@ export const TodoForm = ({ addTodo }) => {
             <input type="text" className="todo-input" value={value} placeholder='What is your task?' onChange={
                 (e) => setValue(e.target.value)}></input>
 
-            <select name="days" id="day-select">
+            <select className="day-select" name="days" id="day-select">
                 <option value="">Day of Week</option>
                 <option value="1">Sunday</option>
                 <option value="2">Monday</option>
