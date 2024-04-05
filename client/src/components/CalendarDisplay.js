@@ -80,6 +80,7 @@ function CalendarDisplay() {
     console.log(eventName);
     console.log(eventDescription);
 
+    // TODO: erm i don't want that online
     const API_KEY = "AIzaSyBQzqTpCH7pEq5_rGmZaj3y0wkq0oV_wuI";
     // TODO: is there a way to access a private google calendar???? how do i make this nice for the user???
     let calendars = [
